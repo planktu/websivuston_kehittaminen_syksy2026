@@ -1,0 +1,1 @@
+Tämä kansio on työpajatehtävää 3 varten.

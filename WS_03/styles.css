@@ -1,0 +1,124 @@
+
+p {
+      color: blue;
+    }
+    
+    body {
+      background-color: rgb(146, 144, 181);
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #3f1cb5;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #3f1cb5;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #3f1cb5;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #007a0e;
+      color: #00ccff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #661313;
+    }
+
+    .content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #8e0e0e;
+  border: 1px solid #3f1cb5;
+}
+
+.transition-button {
+        background-color: rgb(86, 210, 84);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+
+      .animation-box {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(255, 187, 0);
+        position: relative;
+        animation: move 10s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 800px;
+        }
+      }
+
+      .pseudo-list li:nth-child(odd) {
+        background-color: rgb(153, 155, 255);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(77, 113, 255);
+      }
+
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
